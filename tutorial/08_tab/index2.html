@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="./style2.css">
+    <script src="../script/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>tab2</h1>
+
+
+        <div id="tab">
+            <ul class="tab">
+                <li><a href="#x">tab 1</a></li>
+                <li><a href="#x">tab 2</a></li>
+                <li><a href="#x">tab 3</a></li>
+            </ul>
+
+            <div class="tab_content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus accusantium reprehenderit veritatis. Facilis atque placeat excepturi temporibus. Cupiditate eligendi sed nihil numquam provident error molestiae aperiam nemo natus quibusdam, exercitationem odio molestias, et minima dicta ea dolor in nobis delectus cumque. Non explicabo quos tenetur dolorum fugiat fugit dolores?
+            </div>
+            <div class="tab_content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus accusantium reprehenderit veritatis. Facilis atque placeat excepturi temporibus. Cupiditate eligendi sed nihil numquam provident error molestiae aperiam nemo natus quibusdam, exercitationem odio molestias, et minima dicta ea dolor in nobis delectus cumque. Non explicabo quos tenetur dolorum fugiat fugit dolores?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus accusantium reprehenderit veritatis. Facilis atque placeat excepturi temporibus. Cupiditate eligendi sed nihil numquam provident error molestiae aperiam nemo natus quibusdam, exercitationem odio molestias, et minima dicta ea dolor in nobis delectus cumque. Non explicabo quos tenetur dolorum fugiat fugit dolores?
+            </div>
+            <div class="tab_content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus accusantium reprehenderit veritatis. Facilis atque placeat excepturi temporibus. Cupiditate eligendi sed nihil numquam provident error molestiae aperiam nemo natus quibusdam, exercitationem odio molestias, et minima dicta ea dolor in nobis delectus cumque. Non explicabo quos tenetur dolorum fugiat fugit dolores?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+            </div>
+        </div>
+
+    
+    </div>
+
+    <script>
+        $('.tab li').eq(0).addClass('active')
+        $('.tab_content').hide().eq(0).show()
+
+        $('.tab li').click(function(){
+            $('.tab li').removeClass('active')
+            $(this).addClass('active')
+
+            $('.tab_content').hide()
+
+            var idx = $(this).index()
+            $('.tab_content').eq(idx).show(idx)
+        })
+
+
+    </script>
+
+    
+</body>
+</html>

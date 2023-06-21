@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    />
+    <script src="../script/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="./js/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Magnific Popup</h1>
+
+      <div class="main">
+        <div class="btns">
+          <a href="#modal" class="popup_modal">open modal</a>
+          <a
+            class="popup-youtube"
+            href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+            >open youtube video</a
+          >
+          <a class="simple-ajax-popup" href="./ajax.html">open load ajax</a>
+        </div>
+
+        <p>Single image ligthbox</p>
+        <div class="single">
+          <a
+            class="image-popup-vertical-fit"
+            href="../images/img_01_b.jpg"
+            title="이미지1"
+            ><img src="../images/img_01.jpg" alt=""
+          /></a>
+          <a
+            class="image-popup-vertical-fit"
+            href="../images/img_02_b.jpg"
+            title="이미지2"
+            ><img src="../images/img_02.jpg" alt=""
+          /></a>
+          <a
+            class="image-popup-vertical-fit"
+            href="../images/img_03_b.jpg"
+            title="이미지3"
+            ><img src="../images/img_03.jpg" alt=""
+          /></a>
+        </div>
+
+        <p>Gallery image lightbox</p>
+        <div class="gallery">
+          <a href="./images (2)/imag_01.jpg" title="암벽도시"
+            ><img src="./images (2)/imag_01.jpg" alt=""
+          /></a>
+          <a href="./images (2)/imag_02.jpg" title="궁전"
+            ><img src="./images (2)/imag_02.jpg" alt=""
+          /></a>
+          <a href="./images (2)/imag_03.jpg" title="여자"
+            ><img src="./images (2)/imag_03.jpg" alt=""
+          /></a>
+          <a href="./images (2)/imag_04.jpg" title="해변"
+            ><img src="./images (2)/imag_04.jpg" alt=""
+          /></a>
+          <a href="./images (2)/imag_05.jpg" title="문"
+            ><img src="./images (2)/imag_05.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div id="modal" class="mfp-hide white-popup-block">
+        <h2>Im modal</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          officia exercitationem sunt sed facilis reiciendis molestiae, odio
+          delectus inventore itaque omnis distinctio reprehenderit voluptatibus
+          tempora at unde? Assumenda, repellat minima?
+        </p>
+        <a class="popup-modal-dismiss" href="">close</a>
+      </div>
+    </div>
+  </body>
+</html>

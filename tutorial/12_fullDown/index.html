@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../script/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">가나다</div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">소개</a>
+                        <ul>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">수상내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">홍보</a>
+                        <ul>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">TV광고</a></li>
+                            <li><a href="#">미디어 행사</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="bars">
+                    <i class="xi-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <div class="main">
+            <div class="slide"></div>
+            <section>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem deserunt earum esse repellat! Esse velit nulla accusantium expedita quia inventore saepe similique corrupti sequi culpa, commodi voluptatibus dolor officia quis sit alias nesciunt nam molestias excepturi modi, ea consequatur? Consequatur asperiores velit voluptates quas impedit ducimus maiores quam accusantium inventore incidunt qui, nesciunt aliquam laudantium dolor, quisquam saepe aut at nostrum iusto labore ipsam dolorem consectetur nihil atque! Id, ipsa nulla fuga nisi officia iusto cum quas, vel exercitationem ipsam culpa asperiores sed expedita omnis voluptatem ab, veniam maxime! Alias optio voluptates delectus dolore libero suscipit adipisci molestiae fugiat!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem deserunt earum esse repellat! Esse velit nulla accusantium expedita quia inventore saepe similique corrupti sequi culpa, commodi voluptatibus dolor officia quis sit alias nesciunt nam molestias excepturi modi, ea consequatur? Consequatur asperiores velit voluptates quas impedit ducimus maiores quam accusantium inventore incidunt qui, nesciunt aliquam laudantium dolor, quisquam saepe aut at nostrum iusto labore ipsam dolorem consectetur nihil atque! Id, ipsa nulla fuga nisi officia iusto cum quas, vel exercitationem ipsam culpa asperiores sed expedita omnis voluptatem ab, veniam maxime! Alias optio voluptates delectus dolore libero suscipit adipisci molestiae fugiat!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem deserunt earum esse repellat! Esse velit nulla accusantium expedita quia inventore saepe similique corrupti sequi culpa, commodi voluptatibus dolor officia quis sit alias nesciunt nam molestias excepturi modi, ea consequatur? Consequatur asperiores velit voluptates quas impedit ducimus maiores quam accusantium inventore incidunt qui, nesciunt aliquam laudantium dolor, quisquam saepe aut at nostrum iusto labore ipsam dolorem consectetur nihil atque! Id, ipsa nulla fuga nisi officia iusto cum quas, vel exercitationem ipsam culpa asperiores sed expedita omnis voluptatem ab, veniam maxime! Alias optio voluptates delectus dolore libero suscipit adipisci molestiae fugiat!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem deserunt earum esse repellat! Esse velit nulla accusantium expedita quia inventore saepe similique corrupti sequi culpa, commodi voluptatibus dolor officia quis sit alias nesciunt nam molestias excepturi modi, ea consequatur? Consequatur asperiores velit voluptates quas impedit ducimus maiores quam accusantium inventore incidunt qui, nesciunt aliquam laudantium dolor, quisquam saepe aut at nostrum iusto labore ipsam dolorem consectetur nihil atque! Id, ipsa nulla fuga nisi officia iusto cum quas, vel exercitationem ipsam culpa asperiores sed expedita omnis voluptatem ab, veniam maxime! Alias optio voluptates delectus dolore libero suscipit adipisci molestiae fugiat!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem deserunt earum esse repellat! Esse velit nulla accusantium expedita quia inventore saepe similique corrupti sequi culpa, commodi voluptatibus dolor officia quis sit alias nesciunt nam molestias excepturi modi, ea consequatur? Consequatur asperiores velit voluptates quas impedit ducimus maiores quam accusantium inventore incidunt qui, nesciunt aliquam laudantium dolor, quisquam saepe aut at nostrum iusto labore ipsam dolorem consectetur nihil atque! Id, ipsa nulla fuga nisi officia iusto cum quas, vel exercitationem ipsam culpa asperiores sed expedita omnis voluptatem ab, veniam maxime! Alias optio voluptates delectus dolore libero suscipit adipisci molestiae fugiat!</p>
+            </section>
+        </div>
+
+        <div class="dimm"></div>
+    </div>
+
+
+    <script>
+        $('.gnb').hover(
+            function(){
+                $('.gnb li ul').stop().slideDown(300)
+                $('nav').addClass('active')
+                $('.dimm').addClass('active')
+            },
+            function(){
+                $('.gnb li ul').stop().slideUp(300)
+                $('nav').removeClass('active')
+                $('.dimm').removeClass('active')
+
+
+            }
+        )
+    </script>
+
+    
+</body>
+</html>
