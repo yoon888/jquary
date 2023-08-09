@@ -14,4 +14,18 @@
   <button>로그인</button>
 </header>
 
-<script></script>
+<script>
+  var str = location.pathname;
+  if (str.includes("main")) {
+    $(".gnb li").eq(0).addClass("active");
+  }
+  if (str.includes("intro")) {
+    $(".gnb li").eq(1).addClass("active");
+  }
+  if (str.includes("service")) {
+    $(".gnb li").eq(2).addClass("active");
+  }
+  if (str.includes("value")) {
+    $(".gnb li").eq(3).addClass("active");
+  }
+</script>
